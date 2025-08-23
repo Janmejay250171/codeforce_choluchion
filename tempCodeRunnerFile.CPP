@@ -1,18 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    int n,t;
-    cin>>n>>t;
-    string s;
-    cin>>s;
-for(int j=0;j<t;j++){
-   for(int i=0;i<n-1;i++){
-      if(s[i]=='B' && s[i+1]=='G'){
-          swap(s[i],s[i+1]);
-          i+=1;
-    }
+    int n;
+    cin>>n;
+    int c=0;
+    for(int i=1;i<=n;i++){
+        if(i%2!=0){
+            c+=((-1)*i);
+        }
+        else{
+            c+=i;
+        }
 
-}
-}
-cout<<s;
+    }
+   cout<<c; 
 }
